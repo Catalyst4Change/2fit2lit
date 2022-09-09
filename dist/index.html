@@ -11,7 +11,7 @@
   <body>
     <!-- header -->
     <section class="header bent-left has-shadow">
-      <div class="header-logo bent-left fredoka400 has-shadow has-margin">
+      <div class="header-logo fredoka400 has-shadow has-margin">
         FIT
         <img class="flame-icon" src="./images/icons8-fire-90.png" alt="flame icon">
         LIT
@@ -41,19 +41,40 @@
         <div class="display-article-content steps-content fredoka200">
           <p>Your daily steps goal is: <span class="steps-content-goal bold"></span></p>
             <p>FitLit User Average: <span class="bold" id="step-goal-vs-avg"></span> </p>
-            <canvas class="graph" height="250" id="compare-avg-goal"></canvas>
+            <div class="chart-container">
+
+
+
+
+              <canvas class="chart" id="compare-avg-goal"></canvas>
+
+
+
+
+            </div>
           </div>
         </div>
           
         <div class="steps-content-friends has-margin fredoka200">
           <div class="steps-content-header">Your friend's Step Goals: </div>
           <div id="friendList" class="friend-list bold"></div>
-          <canvas class="graph" height="300" id="steps-friends-chart"></canvas>
+          <div class="chart-container">
+
+
+
+          
+            <canvas class="chart" id="steps-friends-chart"></canvas>
+
+
+
+
+          </div>
+          
         </div>
       </article>
 
       <!-- hydration article -->
-      <article class="display-article hydration has-shadow verticle-margin">
+      <article class="display-article hydration has-shadow bent-right verticle-margin">
         <div class="display-article-header fredoka400">
           <img class="display-article-header-icon" src="./images/icons8-water-52.png" alt="water drop to represent hydration">
           Hydration
@@ -68,13 +89,23 @@
           <br>
           <div>Hydration this week:</div>
           <div id="avg-water-week" class="bold"></div>
-          <canvas class="graph" height="450" id="week-in-water"></canvas>
+          <div class="chart-container-tall">
+
+
+
+
+            <canvas class="chart" id="week-in-water"></canvas>
+
+
+
+
+          </div>
         </div>
         
       </article>
 
       <!-- sleep article -->
-      <article class="display-article sleep has-shadow has-margin">
+      <article class="display-article sleep has-shadow bent-right has-margin">
         <div class="display-article-header fredoka400">
           <img class="display-article-header-icon" src="./images/icons8-sleep-52.png" alt="floating Zs to represent sleep">
           Sleep
@@ -91,13 +122,24 @@
         <div class="display-article-content sleep-content fredoka200" id="sleep-this-week">
           <div>Sleep This Week: </div>
           <div id="sleep-hours-weekly"></div>
-          <canvas class="graph" height="250" id="sleep-graph"></canvas>
+          <div class="chart-container">
+
+
+
+
+
+            <canvas class="chart" id="sleep-chart"></canvas>
+
+
+
+            
+          </div>
         </div>
 
       </article>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-    <script type="text/javascript" src="jscript/graph.js"></script>
+    <script type="text/javascript" src="jscript/chart.js"></script>
     <script src="./bundle.js"></script>
   </body>
 </html>

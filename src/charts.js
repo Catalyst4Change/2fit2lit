@@ -21,6 +21,7 @@ export function createAvgGoalChart(currentUser, userRepo) {
       }]
     },
     options: {
+      maintainAspectRatio: false,
       scales: {
         yAxes: [{
           ticks: {
@@ -48,6 +49,7 @@ export function createStepFriendsChart(currentUser, userRepo) {
       }]
     },
     options: {
+      maintainAspectRatio: false,
       scales: {
         yAxes: [{
           ticks: {
@@ -78,6 +80,7 @@ export function createWeeklyHydroChart(hydrationData, currentUser, todaysDate) {
       }]
     },
     options: {
+      maintainAspectRatio: false,
       scales: {
         yAxes: [{
           ticks: {
@@ -98,7 +101,7 @@ export function createWeeklySleepData(currentUser, sleepData, todaysDate) {
     return acc
   },{dates:[], hours:[], qualities:[]} )
 
-  new Chart("sleep-graph", {
+  new Chart("sleep-chart", {
     type: "bar",
     data: {
       labels: sleepChartData.dates,
@@ -114,6 +117,7 @@ export function createWeeklySleepData(currentUser, sleepData, todaysDate) {
       }]
     },
     options: {
+      maintainAspectRatio: false,
       indexAxis: 'y',
     }  
   }) 
