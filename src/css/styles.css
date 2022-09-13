@@ -1,3 +1,4 @@
+
 body {
   display: flex;
   flex-direction: column;
@@ -42,7 +43,6 @@ p {
   background-color: rgb(255, 255, 255, .6);
   font-size: 3.5em;
   border-radius: 30px 10px;
-
 }
 
 .header-welcome-mat{
@@ -69,7 +69,7 @@ p {
 }
 
 .friend-list {
-align-items: ceter;
+  align-items: ceter;
 }
 
 .steps-content-header {
@@ -154,4 +154,24 @@ align-items: ceter;
 .chart-container-tall {
   position: relative;
   height: 400px;
+}
+
+@media screen and (max-width:825px) {
+  .header{
+    padding: 2% 5%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+  }
+
+  .display {
+    width: 80%;
+    flex-direction: column;
+  }
+
+  .display-article {
+    max-width: none;
+    margin: 3vw;
+  }
+  
 }
