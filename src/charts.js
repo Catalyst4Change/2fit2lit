@@ -35,17 +35,19 @@ export function createAvgGoalChart(currentUser, userRepo) {
     
 export function createStepFriendsChart(currentUser, userRepo) {
   const friendsNames = currentUser.friends.map(friend => userRepo.findUserData(friend).name)
+  friendsNames.unshift(currentUser.returnUserFirstName())
   const friendsGoals = currentUser.friends.map(friend => userRepo.findUserData
   (friend).dailyStepGoal)
+  friendsGoals.unshift(currentUser.dailyStepGoal)
 
   new Chart("steps-friends-chart", {
     type: "bar",
     data: {
-      labels: friendsNames, 
+      labels: friendsNames,
       datasets: [{
         label: 'Your Friends Goals',
         backgroundColor: barColors,
-        data: friendsGoals
+        data: friendsGoals 
       }]
     },
     options: {
