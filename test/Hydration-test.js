@@ -166,8 +166,8 @@ describe('Hydration', () => {
   });
 
   it('should average the ounces water consumed forever by a user', () => {
-    expect(hydration.findAverageDailyHydration(1)).to.equal(57.4)
-    expect(hydration.findAverageDailyHydration(2)).to.equal(64.1)
+    expect(hydration.findAverageDailyHydration(1)).to.equal(57)
+    expect(hydration.findAverageDailyHydration(2)).to.equal(64)
   });
 
   it('should return a list containing the ounces water consumed each day over a seven day period by a user', () => {
