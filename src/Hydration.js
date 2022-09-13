@@ -38,7 +38,6 @@ class Hydration {
   findWeeklyHydrationData(userID, date) {
     const weeklyOunces = [];
     this.findWeeklyHydration(userID, date).forEach(week => weeklyOunces.push(week.numOunces))
-    console.log("weekly oz", weeklyOunces);
     return weeklyOunces
   }
 }

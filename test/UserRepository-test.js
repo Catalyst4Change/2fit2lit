@@ -78,8 +78,4 @@ describe('UserRepository', () => {
   it('should return average of all user step goals', () => {
     expect(userRepository.calculateAvgStepGoal()).to.equal(6667)
   });
-
-  it("should return today's date", () => {
-    expect(userRepository.findToday(1)).to.deep.equal(users[1])
-  })
 });
