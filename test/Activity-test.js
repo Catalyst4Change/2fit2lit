@@ -66,9 +66,42 @@ describe('Activity', () => {
         expect(activity).to.be.an.instanceOf(Activity)
     });
 
-    it('should find user by ID', () => {
-        expect()
+    it.skip('should find the miles walked based on number of steps by a date', () => {
+        expect(activity.findMilesWalkedByDate()).to.equal()
+    });
+
+    it.skip('should find active minutes for a given day', () => {
+        expect(activity.findActiveMinutesByDate()).to.equal()
     })
+
+    it.skip('should find average active minutes for a given week', () => {
+        expect(activity.findActiveMinutesForWeek()).to.equal()
+    });
+
+    it.skip('should find user step goal for a given date', () => {
+        expect(activity.findStepGoalByDate()).to.equal()
+    });
+
+    it.skip('should find all days where user exceeded step goal', () => {
+        expect(activity.findExceededStepGoalByDate()).to.equal()
+    });
+
+    it.skip('should find user all time stair climbing record', () => {
+        expect(activity.findStairClimbingRecord()).to.equal()
+    });
+
+    it.skip('should find average stairs climbed for all users on specific date', () => {
+        expect(activity.methodHere()).to.equal()
+    });
+
+    it.skip('should find average steps taken for all users on specific date', () => {
+        expect(activity.methodHERE()).to.equal()
+    });
+
+    it.skip('should find average minutes active for a specific date', () => {
+        expect(activity.methodHere()).to.equal()
+    });
+
 
 
 
