@@ -85,7 +85,7 @@ function generateCharts() {
   createWeeklySleepData(currentUser, sleepData, todaysDate)
 }
 
-// functions //
+// DOM manipulation //
 function applyUserName() {
   userNameDisplay.innerText = currentUser.returnUserFirstName() 
 }
