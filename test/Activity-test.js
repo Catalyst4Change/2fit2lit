@@ -91,15 +91,15 @@ describe('Activity', () => {
     });
 
     it.skip('should find average stairs climbed for all users on specific date', () => {
-        expect(activity.methodHere()).to.equal()
+        expect(activity.findAverageStairClimbedByDate()).to.equal()
     });
 
     it.skip('should find average steps taken for all users on specific date', () => {
-        expect(activity.methodHERE()).to.equal()
+        expect(activity.findAverageStepsByDate()).to.equal()
     });
 
     it.skip('should find average minutes active for a specific date', () => {
-        expect(activity.methodHere()).to.equal()
+        expect(activity.findAverageMinutesActiveByDate()).to.equal()
     });
 
 
