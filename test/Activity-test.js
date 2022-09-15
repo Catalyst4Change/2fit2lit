@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import Activity from '../src/Activity';
 import User from '../src/User';
-import UserRepository from "./UserRepository";
+import UserRepository from "../src/UserRepository";
 
 
 describe('Activity', () => {
@@ -261,8 +261,8 @@ describe('Activity', () => {
         expect(activity.findMilesWalkedByDate(1, '2019/06/10')).to.equal(4092)
     });
 
-    it.skip('should find active minutes for a given day', () => {
-        expect(activity.findActiveMinutesByDate()).to.equal()
+    it('should find active minutes for a given day', () => {
+        expect(activity.findActiveMinutesByDate(1, "2019/06/15")).to.equal(140)
     })
 
     it.skip('should find average active minutes for a given week', () => {
