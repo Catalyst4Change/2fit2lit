@@ -1,4 +1,4 @@
-import UserRepository from "./UserRepository";
+import UserRepository from "../src/UserRepository";
 
 class Activity {
     constructor(activityData, /* userID */) {
@@ -17,7 +17,7 @@ class Activity {
 
     findMilesWalkedByDate(userID, date) {
     // For a specific day (specified by a date), return the miles a user has walked based on their number of steps (use their strideLength to help calculate this)
-    
+
         const stepsByDate = this.findActivityDataById(userID).find(activityData => activityData.date === date).numSteps
         // find user by id √
         //.find(user => user.date).numSteps √
@@ -28,12 +28,14 @@ class Activity {
         // <= this is the point I got lost.
         // do we need to const a new UserRepository for this test?
         // otherwise I don't know how to get the user's stridelength
-        console.log(distanceWalked()); 
+        console.log(distanceWalked());
     }
 
-    //findActiveMinutesByDate(userID, date) {
-
-    //}
+    findActiveMinutesByDate(userID, date) {
+      const userData = this.findActivityDataById(userID)
+      const findActiveMinutesByDate = userData.find(user => user.date === date)
+      return findActiveMinutesByDate.minutesActive
+    }
 
     //findActiveMinutesForWeek(userID) {
 
