@@ -21,10 +21,10 @@ class Hydration {
   findAverageDailyHydration(userID) {
     const filterHydration = this.findHydrationById(userID)
     const avgOunces = filterHydration.reduce((acc, hydration) => {
-        acc += hydration.numOunces
-        return acc
-        }, 0)
-        return parseFloat((avgOunces / filterHydration.length).toFixed(0))
+      acc += hydration.numOunces
+      return acc
+      }, 0)
+    return parseFloat((avgOunces / filterHydration.length).toFixed(0))
   }
     
   findWeeklyHydration(userID, date) {

@@ -15,6 +15,7 @@ class UserRepository {
     }, 0)
     return Math.round(stepGoal / this.users.length)
   }
+
 }
 
 export default UserRepository;

@@ -12,5 +12,4 @@ const getHydrationApiData = fetch('https://fitlit-api.herokuapp.com/api/v1/hydra
 .then(response => response.json())
 .catch(err => console.log(err))
 
-
 export { getUsersApiData, getSleepApiData, getHydrationApiData }

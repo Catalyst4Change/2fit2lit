@@ -1,6 +1,8 @@
 import { expect } from 'chai';
 import Activity from '../src/Activity';
 import User from '../src/User';
+import UserRepository from "./UserRepository";
+
 
 describe('Activity', () => {
     let activityData;
@@ -23,6 +25,90 @@ describe('Activity', () => {
             numSteps: 4294,
             minutesActive: 138,
             flightsOfStairs: 10
+            },
+            {
+            userID: 1,
+            date: "2019/06/14",
+            numSteps: 1200,
+            minutesActive: 100,
+            flightsOfStairs: 5
+            },
+            {
+            userID: 2,
+            date: "2019/06/14",
+            numSteps: 1521,
+            minutesActive: 155,
+            flightsOfStairs: 11
+            },
+            {
+            userID: 1,
+            date: "2019/06/13",
+            numSteps: 4001,
+            minutesActive: 175,
+            flightsOfStairs: 20
+            },
+            {
+            userID: 2,
+            date: "2019/06/13",
+            numSteps: 5280,
+            minutesActive: 160,
+            flightsOfStairs: 9
+            },
+            {
+            userID: 1,
+            date: "2019/06/12",
+            numSteps: 2500,
+            minutesActive: 60,
+            flightsOfStairs: 19
+            },
+            {
+            userID: 2,
+            date: "2019/06/12",
+            numSteps: 3200,
+            minutesActive: 145,
+            flightsOfStairs: 15
+            },
+            {
+            userID: 1,
+            date: "2019/06/11",
+            numSteps: 3577,
+            minutesActive: 140,
+            flightsOfStairs: 16
+            },
+            {
+            userID: 2,
+            date: "2019/06/11",
+            numSteps: 4294,
+            minutesActive: 138,
+            flightsOfStairs: 10
+            },
+            {
+            userID: 1,
+            date: "2019/06/10",
+            numSteps: 4092,
+            minutesActive: 166,
+            flightsOfStairs: 20
+            },
+            {
+            userID: 2,
+            date: "2019/06/10",
+            numSteps: 6969,
+            minutesActive: 420,
+            flightsOfStairs: 13
+            },
+            {
+            userID: 1,
+            date: "2019/06/09",
+            numSteps: 5413,
+            minutesActive: 156,
+            flightsOfStairs: 16
+            },
+            {
+            userID: 2,
+            date: "2019/06/09",
+            numSteps: 4568,
+            minutesActive: 153,
+            flightsOfStairs: 12
             }
         ];
 
@@ -66,8 +152,113 @@ describe('Activity', () => {
         expect(activity).to.be.an.instanceOf(Activity)
     });
 
-    it.skip('should find the miles walked based on number of steps by a date', () => {
-        expect(activity.findMilesWalkedByDate()).to.equal()
+    it('should find activity data for a user by their id', () => {
+        expect(activity.findActivityDataById(1)).to.deep.equal([
+            {
+            userID: 1,
+            date: "2019/06/15",
+            numSteps: 3577,
+            minutesActive: 140,
+            flightsOfStairs: 16
+            },
+            {
+            userID: 1,
+            date: "2019/06/14",
+            numSteps: 1200,
+            minutesActive: 100,
+            flightsOfStairs: 5
+            },
+            {
+            userID: 1,
+            date: "2019/06/13",
+            numSteps: 4001,
+            minutesActive: 175,
+            flightsOfStairs: 20
+            },
+            {
+            userID: 1,
+            date: "2019/06/12",
+            numSteps: 2500,
+            minutesActive: 60,
+            flightsOfStairs: 19
+            },
+            {
+            userID: 1,
+            date: "2019/06/11",
+            numSteps: 3577,
+            minutesActive: 140,
+            flightsOfStairs: 16
+            },
+            {
+            userID: 1,
+            date: "2019/06/10",
+            numSteps: 4092,
+            minutesActive: 166,
+            flightsOfStairs: 20
+            },
+            {
+            userID: 1,
+            date: "2019/06/09",
+            numSteps: 5413,
+            minutesActive: 156,
+            flightsOfStairs: 16
+            }
+        ])
+        expect(activity.findActivityDataById(2)).to.deep.equal([
+            {
+            userID: 2,
+            date: "2019/06/15",
+            numSteps: 4294,
+            minutesActive: 138,
+            flightsOfStairs: 10
+            },
+            {
+            userID: 2,
+            date: "2019/06/14",
+            numSteps: 1521,
+            minutesActive: 155,
+            flightsOfStairs: 11
+            },
+            {
+            userID: 2,
+            date: "2019/06/13",
+            numSteps: 5280,
+            minutesActive: 160,
+            flightsOfStairs: 9
+            },
+            {
+            userID: 2,
+            date: "2019/06/12",
+            numSteps: 3200,
+            minutesActive: 145,
+            flightsOfStairs: 15
+            },
+            {
+            userID: 2,
+            date: "2019/06/11",
+            numSteps: 4294,
+            minutesActive: 138,
+            flightsOfStairs: 10
+            },
+            {
+            userID: 2,
+            date: "2019/06/10",
+            numSteps: 6969,
+            minutesActive: 420,
+            flightsOfStairs: 13
+            },
+            {
+            userID: 2,
+            date: "2019/06/09",
+            numSteps: 4568,
+            minutesActive: 153,
+            flightsOfStairs: 12
+            }
+        ])
+    })
+
+    it('should find the miles walked based on number of steps by a date', () => {
+        expect(activity.findMilesWalkedByDate(1, '2019/06/10')).to.equal(4092)
     });
 
     it.skip('should find active minutes for a given day', () => {
