@@ -1,7 +1,7 @@
 # FitLit (Refactored)
 
 ## Introduction
-- FitLit is a Turing School Mudule 2 project designed to teach and emphasise ES6 classes, object and array prototype methods to perform data manipulation, write modular code that follows SRP,
+- FitLit is a Turing School Module 2 project designed to teach and emphasise ES6 classes, object and array prototype methods to perform data manipulation, write modular code that follows SRP,
 and implement TDD.
 Make network requests to retrieve data.
 - Fitness tracker dashboard called FitLit where a user can track all of their activities in once place. A user is able to see their daily step goals in comparison to other users. They are also able to track sleep habits and water intake in one convenient place.
