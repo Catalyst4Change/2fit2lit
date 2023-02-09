@@ -1,7 +1,9 @@
 # FitLit
 
 ## Introduction
--  Fitness tracker site called FitLit where a user can track all of their activities in once place.  A user is able to see their daily step goals in comparison to other users.  They are also able to track sleep habits and water intake in one convenient place.
+-  Fitness tracker dashboard called FitLit where a user can track all of their activities in once place. A user is able to see their daily step goals in comparison to other users. They are also able to track sleep habits and water intake in one convenient place.
+- This was our first project reaching out to several APIs to gather and correlate seperate datasets.
+- EDIT - I (Catalyst) have taken the orginal group project and cleaned up the CSS as a personal endeavor.
 
 ## Technologies
 - JavaScript
@@ -12,12 +14,14 @@
 - Charts.js
 
 ## Illustrations
-- FitLit in action:
-![new fitlit gif](https://user-images.githubusercontent.com/99753561/188340724-158af882-40dc-47f6-a49a-73934fd831ab.gif)
-
+- A user should be able to show and hide their personal data:
+![user icon changes from name to personal info when clicked ](https://raw.githubusercontent.com/Catalyst4Change/2fit2lit/main/src/images/2fit_userinfo.gif)
+- The dashboard is responsive to screen size.
+![the screen shifts from multiple columns to a single scrollable column on a smaller screen](https://raw.githubusercontent.com/Catalyst4Change/2fit2lit/main/src/images/2fit_responsive.gif)
 
 ## Features
-- Display a user's data and compares their daily step goals to the average steps goals of users.
+- User can show/hide their personal data (MVP requirement)
+- Display a user's health data and compare their daily step goals to the average steps goals of users.
 - Display user's friends.
 - Allows a user to track sleep goals and hydration goals.
 
