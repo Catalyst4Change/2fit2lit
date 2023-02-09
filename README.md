@@ -14,9 +14,9 @@
 - Charts.js
 
 ## Illustrations
-- A user should be able to show and hide their personal data:/
+- A user should be able to show and hide their personal data:/  
 ![user icon changes from name to personal info when clicked ](https://raw.githubusercontent.com/Catalyst4Change/2fit2lit/main/src/images/2fit_userinfo.gif)
-- The dashboard is responsive to screen size./
+- The dashboard is responsive to screen size./  
 ![the screen shifts from multiple columns to a single scrollable column on a smaller screen](https://raw.githubusercontent.com/Catalyst4Change/2fit2lit/main/src/images/2fit_responsive.gif)
 
 ## Features
