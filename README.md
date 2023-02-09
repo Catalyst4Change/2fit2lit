@@ -6,6 +6,7 @@ Make network requests to retrieve data.
 - It is a fitness tracker dashboard where a user can track all of their activities in once place. A user is able to see their daily step goals in comparison to other users. They are also able to track sleep habits and water intake in one convenient place.
 - This was our first project reaching out to several APIs to gather and correlate seperate datasets.
 - EDIT - I (Catalyst) have taken the orginal group project and cleaned up the CSS as a personal endeavor. I was quite proud of the clean UI. I added asymetric corners to the modals to give it a playful vibe. The partially-translucent, shadowed boxes give it a sense of depth while emphasizing the background image. A photo of the Colorado backcountry taken by own very own [Carissa Gross](https://www.carissagrossphotography.com) inspires the user to get outdoors and be healthy.
+- A live version can be found on [Vercel](https://2fit2lit.vercel.app)
 
 ## Technologies
 - JavaScript
